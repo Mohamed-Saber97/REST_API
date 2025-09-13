@@ -1,0 +1,48 @@
+- System Design Overview
+1. Architecture
+    Backend: Node.js with Express.js (REST API)
+
+    Database: MongoDB (using Mongoose ODM)
+
+    Authentication: JWT (JSON Web Tokens)
+
+    Pagination: Limit-Offset based or Cursor-based
+
+    Structure: MVC or Modular (routes, controllers, services)
+
+2. Modules & Layers
+    Routes – Define endpoints
+
+    Controllers – Handle requests
+
+    Services – Business logic
+
+    Models – MongoDB Schemas
+
+    Middlewares – Auth, validation, error handling
+
+
+
+- step by step Implementation
+    1 - initialize the project :
+        npm init -y
+        npm i express mongoose dotenv jsonwebtoken cors bcryptjs
+        npm i nodemon --save-dev
+    2 - Project Structure : 
+        config/
+            db.js
+        controllers/
+            userControllers.js
+        models/
+            User.js
+        routes/
+            userRoutes.js
+        middlewares/
+            auth.js
+            errorHandler.js
+        .env
+        server.js
+
+
+
+
